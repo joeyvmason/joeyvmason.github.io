@@ -1,5 +1,5 @@
 ---
-title: Clean Blog
+title: Joey Mason
 timezone: UTC
 collections:
   posts:
@@ -9,16 +9,15 @@ collections:
     title: Uploads
     output: true
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: Write your site description here. It will be used as your sites meta
-  description as well!
+#email: your-email@yourdomain.com
+copyright_name: Joey Mason
+description: Joey Mason
 baseurl: ''
-url: http://yourdomain.com
-twitter_username: SBootstrap
-github_username: davidtmiller
-facebook_username: StartBootstrap
-email_username: your-email@yourdomain.com
+url: http://www.joeyvmason.com
+twitter_username: joeyvmason
+github_username: joeyvmason
+#facebook_username: joeyvmason
+#email_username: your-email@yourdomain.com
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
