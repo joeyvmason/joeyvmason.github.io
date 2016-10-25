@@ -9,15 +9,12 @@ collections:
     title: Uploads
     output: true
 header-img: img/home-bg.jpg
-#email: your-email@yourdomain.com
 copyright_name: Joey Mason
 description: Joey Mason
 baseurl: ''
 url: http://www.joeyvmason.com
 twitter_username: joeyvmason
 github_username: joeyvmason
-#facebook_username: joeyvmason
-#email_username: your-email@yourdomain.com
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
