@@ -2,7 +2,6 @@
 title: Using Scalyr with Elastic Beanstalk
 date: 2016-10-25 12:00:00 Z
 layout: post
-
 ---
 
 # What is Scalyr?
