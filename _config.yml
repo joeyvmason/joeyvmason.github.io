@@ -12,7 +12,7 @@ header-img: img/home-bg-1200.jpg
 copyright_name: Joey Mason
 description: Joey Mason
 baseurl: ''
-url: http://joeyvmason.github.io
+url: http://www.joeyvmason.com
 twitter_username: joeyvmason
 github_username: joeyvmason
 markdown: kramdown
@@ -28,3 +28,4 @@ exclude:
 gems:
 - jekyll-paginate
 - jekyll-feed
+- jekyll-sitemap
