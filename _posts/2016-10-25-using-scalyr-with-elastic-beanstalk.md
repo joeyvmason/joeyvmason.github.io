@@ -8,7 +8,7 @@ layout: post
 
 If you're using Elastic Beanstalk in a production environment and to access your logs, you're either SSHing into boxes, or exporting them via the Elastic Beanstalk console, 
 **you're doing it wrong**. There are many tools out there that can automate this for
-you and for this post, I'll be talking about how to accomplis this using Scalyr.
+you and for this post, I'll be talking about how to accomplish this using Scalyr.
 
 # Why Scalyr?
 
@@ -27,7 +27,7 @@ if you're looking for pure log management.
 ## How does Scalyr work?
 
 There are [several ways](https://www.scalyr.com/help/data-sources) that you can get your log data into Scalyr's system, but the most 
-straight forward way to do it is to use the Scaly Agent. 
+straight forward way to do it is to use the Scalyr Agent. 
 
 ### Scalyr Agent
 
@@ -44,7 +44,7 @@ wget -q https://www.scalyr.com/scalyr-repo/stable/latest/install-scalyr-agent-2.
 
 #### Configuration
 
-There are a [many configuration options](https://www.scalyr.com/help/scalyr-agent#configuration){:target="_blank"} available for the Scalyr agent. For 
+There are [many configuration options](https://www.scalyr.com/help/scalyr-agent#configuration){:target="_blank"} available for the Scalyr agent. For 
 example, you can customize the host name or provide a path to the particular log file you want to capture. To change the configuration, 
 you will need to edit the config file: 
 
@@ -140,7 +140,7 @@ The second section (`commands`) tells Elastic Beanstalk to install the Scalyr ag
 
 ### Deploy
 
-At this point, you should be good to go. Deploy your application just as normally would and keep an eye on the Elastic Beanstalk events console. If there are 
+At this point, you should be good to go. Deploy your application just as you normally would and keep an eye on the Elastic Beanstalk events console. If there are 
 any problems, error messages will show up here. Good luck!  
 
 
