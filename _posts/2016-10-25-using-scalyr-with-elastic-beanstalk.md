@@ -1,7 +1,8 @@
 --- 
 title: Using Scalyr with Elastic Beanstalk
 date: 2016-10-25 12:00:00 Z
-description: Use Scalyr to aggregate logs from multiple servers managed by Elastic Beanstalk.  
+description: Use Scalyr to aggregate logs from multiple servers managed by Elastic Beanstalk.
+header-img: img/cattle.jpg
 layout: post
 ---
 
