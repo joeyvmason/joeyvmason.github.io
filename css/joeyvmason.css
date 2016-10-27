@@ -403,3 +403,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+/* Customization for Facebook share button */
+
+@media only screen {
+  .fb_iframe_widget span {
+    vertical-align: baseline !important;
+  }
+}
