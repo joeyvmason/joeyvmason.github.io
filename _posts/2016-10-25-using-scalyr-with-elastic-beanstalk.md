@@ -1,10 +1,15 @@
 --- 
 title: Using Scalyr with Elastic Beanstalk
 date: 2016-10-25 12:00:00 Z
+description: Use Scalyr to aggregate logs from multiple servers managed by Elastic Beanstalk.  
 layout: post
 ---
 
-# What is Scalyr?
+If you're using Elastic Beanstalk in a production environment and to access your logs, you're either SSHing into boxes, or exporting them via the Elastic Beanstalk console, 
+**you're doing it wrong**. There are many tools out there that can automate this for
+you and for this post, I'll be talking about how to accomplis this using Scalyr.
+
+# Why Scalyr?
 
 Scalyr provides the ability to aggregate logs from multiple servers and clients into one place. From there, using a simple query 
 language, you can search through all of the logs in the Scalyr dashboard in real-time. 
@@ -18,7 +23,7 @@ There are several other similar [Logging as a Service (LaaS)](https://en.wikiped
 if you're looking for pure log management.
 
 
-# How does it work?
+## How does Scalyr work?
 
 There are [several ways](https://www.scalyr.com/help/data-sources) that you can get your log data into Scalyr's system, but the most 
 straight forward way to do it is to use the Scaly Agent. 

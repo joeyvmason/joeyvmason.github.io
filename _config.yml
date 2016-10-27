@@ -19,7 +19,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-google_analytics_code: UA-79524724-1
+google_tracking_id: UA-79524724-1
 exclude:
 - less
 - node_modules
