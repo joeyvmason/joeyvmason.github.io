@@ -19,8 +19,8 @@ For anyone working with distributed systems, this is an extremely powerful tool.
 environments where servers are ephemeral, not having to look up multiple IP addresses and then SSH into multiple remote servers can 
 mean the difference between resolving a production issue in minutes rather than hours. 
 
-There are several other similar [Logging as a Service (LaaS)](https://en.wikipedia.org/wiki/Logging_as_a_service) startups out there 
-(e.g. [Loggly](https://www.loggly.com), [Papertrail](https://papertrailapp.com)), but I've found Scalyr to be the best of the bunch 
+There are several other similar [Logging as a Service (LaaS)](https://en.wikipedia.org/wiki/Logging_as_a_service){:target="_blank"} startups out there 
+(e.g. [Loggly](https://www.loggly.com){:target="_blank"}, [Papertrail](https://papertrailapp.com){:target="_blank"}), but I've found Scalyr to be the best of the bunch 
 if you're looking for pure log management.
 
 
@@ -44,7 +44,7 @@ wget -q https://www.scalyr.com/scalyr-repo/stable/latest/install-scalyr-agent-2.
 
 #### Configuration
 
-There are a [many configuration options](https://www.scalyr.com/help/scalyr-agent#configuration) available for the Scalyr agent. For 
+There are a [many configuration options](https://www.scalyr.com/help/scalyr-agent#configuration){:target="_blank"} available for the Scalyr agent. For 
 example, you can customize the host name or provide a path to the particular log file you want to capture. To change the configuration, 
 you will need to edit the config file: 
 
@@ -58,24 +58,24 @@ you will need to edit the config file:
 
 ### Log Import
 Alternatively, you can configure Scalyr to import logs from places like Heroku, Amazon RDS and Amazon S3. I won't be covering that in 
-this post, but you can learn more [here](https://www.scalyr.com/help/data-sources).
+this post, but you can learn more [here](https://www.scalyr.com/help/data-sources){:target="_blank"}.
 
 
 # Elastic Beanstalk
 
-AWS Elastic Beanstalk is an autoscaling [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service), similar to 
+AWS Elastic Beanstalk is an autoscaling [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service){:target="_blank"}, similar to 
 Heroku. You provide your code to Amazon, along with some configuration settings, and Amazon will automatically spin up and down EC2 instances 
 based off of scaling triggers.
 
 When using Elastic Beanstalk, you have to assume that at any moment, Amazon might take down an existing server and replace it with a new one. 
-In other words, your servers are [cattle, not pets](http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story). Because of 
+In other words, your servers are [cattle, not pets](http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story){:target="_blank"}. Because of 
 this, any custom environment configuration will need to be provided up front, which means you won't be able to SSH into the box to install and 
 configure Scalyr.
 
 #### .ebextensions
 
 Custom environment configuration is achieved on Elastic Beanstalk through the use of 
-[.ebextensions](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html) configuration files. These configuration files must be 
+[.ebextensions](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html){:target="_blank"} configuration files. These configuration files must be 
 YAML-formatted documents and have the file extension `.config` and need to live in the `.ebextensions` directory in the root of your project.
 
 ## Scalyr setup with .ebextensions
