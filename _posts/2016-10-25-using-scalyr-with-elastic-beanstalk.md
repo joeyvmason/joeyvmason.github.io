@@ -12,7 +12,7 @@ you and for this post, I'll be talking about how to accomplish this using Scalyr
 
 # Why Scalyr?
 
-Scalyr provides the ability to aggregate logs from multiple servers and clients into one place. From there, using a simple query 
+[Scalyr](https://www.scalyr.com){:target="_blank"} provides the ability to aggregate logs from multiple servers and clients into one place. From there, using a simple query 
 language, you can search through all of the logs in the Scalyr dashboard in real-time. 
 
 For anyone working with distributed systems, this is an extremely powerful tool. It can literally save you hours. Not only that, in 
