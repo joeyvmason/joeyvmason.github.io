@@ -1,44 +1,45 @@
 ---
 title: Why you should separate front-end from back-end
-date: 2016-11-01 12:00:00 Z
-description: Improve development speed and maintainability by splitting front-end and back-end into their own repositories.
-published: false
-header-img: 
+date: 2015-11-01 12:00:00 Z
+description: Improve development speed and maintainability by splitting front-end and back-end into their own repositories.-->
 layout: post
+published: false
 ---
 
-Even with the rise in recent years of frontend frameworks like [EmberJS](), [AngularJS]() and [ReactJS](), it wasn't too long 
-ago that the idea of splitting your front-end and back-end into their own repositories was looked upon with mistrust and suspicion.
-In fact, at a previous job, I actually suggested that we do this for a new project and was shot down because the conventional wisdom was 
-that it's easier for development and deployment to keep things together. Oh, how things have changed.
+Even with the rise of frontend JavaScript frameworks like [Angular](https://angularjs.org/){:target="_blank"} and 
+[React](https://facebook.github.io/react/){:target="_blank"}, the idea of splitting your front-end 
+and back-end into separate repositories is looked upon with mistrust and suspicion by many developers. For them, the conventional wisdom is
+that it's easier for development and deployment if you keep things together. At first glance, this argument actually does make a lot of sense. It 
+certainly is easier to worry about cloning just one repository, to only need to open one IDE and to have just one build process. Not only 
+that, most developers are already accustomed to doing things this way, so no one has to learn a new workflow. Having said that, there are some 
+serious benefits to breaking things up that can't be ignored.    
+   
+### Shorter Build Times
 
-That argument for keeping things in one repository actually does make sense at first glance. If you're a new developer to a project, it 
-certainly seems easier to worry about cloning just one repository, to only need to open one IDE and to have just one build script. Not only 
-that, but most developers are already accustomed to doing things this way, so you don't have to teach a new developer a whole new workflow. 
+Assuming your front-end and back-end have some sort of build process, each build is going to take significantly longer if you're building both both frontend and backend. 
+That's not the real issue, though. The real issue is that you're going to be re-building and re-testing your backend whenever you make a change to your front-end (and vice versa). 
+If you fix a typo in your HTML, do you really need to re-run all of your integration tests? That's wasted time and resources. Trust me, your CI server will thank you. 
 
-On the flip side, there are some major downfalls to this approach that can be remedied by breaking things up.
+### Improved Deployments
 
+Rebuilds aren't the biggest problem, though, re-deployments are. A simple change to a CSS file should not require a full re-deployment of your API server.  
 
-<!--  
-Pros of single repo
-- One IDE
-- One thing to clone
-- Easier to conceptualize (less moving parts it seems)
-- Most developers are already accustomed to this workflow
+### IDE Clutter
 
-Cons of single repo
-- Longer build times in general, 
-- changing front-end requires building and deploying back-end and vice-versa 
-- too much code for your ide 
-- front-end devs have to run app infrastructure locally
-- doesn't work well if you go serverless
+This doesn't necessarily have a direct effect on your end-users, but seriously, one of the immediate benefits you'll notice once you make the switch is how 
+much easier it is to work in your IDE. Finding files will be faster and your overall performance of your IDE will be improved because it will have way less files to index.  
 
-Pros of split repos
-- Easier to optimize and deploy front-end code
--->  
+### Microservices / Serverless
 
-#### Deployments
+One of the most popular trends in software development right now is microservices.   
 
+### Better Hosting Options
 
+In my opinion, you should really be striving to condense your entire frontend into a collection of static files. If you can do this, you open yourself to a whole   
 
-#### 
+### Working with Designers
+
+Any large team is going to have certain developers and designers who work exclusively on the front-end code. In a traditional project, this means that your front-end developer is going to have 
+to set up a local database, install certain dependencies and run the server locally. If you have a separate repository for the front-end, you can configure the client-side app to 
+point to a remote API server and use a tool like [local-web-server](https://www.npmjs.com/package/local-web-server) to run the application. 
+
