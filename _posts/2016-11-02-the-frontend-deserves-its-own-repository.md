@@ -1,7 +1,7 @@
 ---
 title: The Frontend Deserves its own Repository 
 date: 2015-11-02 12:00:00 Z
-description: Improve development speed and maintainability by splitting frontend and backend into their own repositories.-->
+description: Improve development speed and maintainability by splitting frontend and backend into their own repositories.
 layout: post
 header-img: img/axe-1200.jpeg
 ---
