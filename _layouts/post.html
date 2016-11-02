@@ -34,6 +34,12 @@ layout: default
 
                 <hr>
 
+                <!-- Twitter Share -->
+                <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false" data-via="joeyvmason">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                <!-- Facebook Share -->
+                <div class="fb-like" data-href="{{site.url}}{{page.url}}" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -46,12 +52,6 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-
-                <!-- Twitter Share -->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false" data-via="joeyvmason">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                <!-- Facebook Share -->
-                <div class="fb-like" data-href="{{site.url}}{{page.url}}" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
                 <!-- Comments -->
                 {% unless page.disableComments %}
