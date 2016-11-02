@@ -1,14 +1,14 @@
 ---
-title: The Frontend Deserves its own Repository 
+title: The Front-end Deserves its own Repository 
 date: 2016-11-02 12:00:00 Z
-description: Improve development speed and maintainability by splitting frontend and backend into their own repositories.
+description: Improve development speed and maintainability by splitting front-end and back-end into their own repositories.
 layout: post
 header-img: img/axe-1200.jpeg
 ---
 
-Even with the rise of frontend JavaScript frameworks like [Angular](https://angularjs.org/){:target="_blank"} and 
-[React](https://facebook.github.io/react/){:target="_blank"}, the idea of splitting your frontend 
-and backend into separate repositories is looked upon with mistrust and suspicion by many developers. Why is this? 
+Even with the rise of front-end JavaScript frameworks like [Angular](https://angularjs.org/){:target="_blank"} and 
+[React](https://facebook.github.io/react/){:target="_blank"}, the idea of splitting your front-end 
+and back-end into separate repositories is looked upon with mistrust and suspicion by many developers. Why is this? 
 If you think about it, a JavaScript app is really not so different from an Android app or an iOS app. It's just a web client 
 that consume a REST API. 
 
@@ -19,7 +19,7 @@ no one has to learn a new workflow. Having said that, there are some serious ben
 
 ### Improve Build Times
 
-If you make a change to a CSS file, do you really need to re-run all of your backend API integration tests? Well, if you keep everything in one repository,
+If you make a change to a CSS file, do you really need to re-run all of your back-end API integration tests? Well, if you keep everything in one repository,
 this is what ends up happening. Splitting things up means you will only build and test what has actually changed, which will result in less wasted time and resources. 
 Your CI server will thank you.
 
@@ -36,26 +36,26 @@ much easier it is to work in your IDE. You will find be able to locate files fas
 ### Microservices
 
 One of the most popular trends in software development right now is microservices. The idea is that you should break up your monolithic application into
-smaller, more manageable loosely-coupled applications with very specific responsibilities. It's very difficult to accomplish this if your frontend code is tightly coupled
-with your backend code. By breaking up your frontend and backend into their own projects, you are cleanly separating responsibilities, which ultimately
-makes development easier. Furthermore, splitting out your frontend into its own repository will make it much simpler to break out your backend into as many microservices as necessary. 
+smaller, more manageable loosely-coupled applications with very specific responsibilities. It's very difficult to accomplish this if your front-end code is tightly coupled
+with your back-end code. By breaking up your front-end and back-end into their own projects, you are cleanly separating responsibilities, which ultimately
+makes development easier. Furthermore, splitting out your front-end into its own repository will make it much simpler to break out your back-end into as many microservices as necessary. 
 
 ### Better Hosting Options
 
-If you're able to condense your entire frontend into a collection of static files and not rely on any server-side HTML rendering (e.g. JSP), your hosting options really open up. 
-For example, you can host your entire frontend on a CDN. This will make scaling much easier and cheaper because you will no longer need to worry about your servers handling requests for 
+If you're able to condense your entire front-end into a collection of static files and not rely on any server-side HTML rendering (e.g. JSP), your hosting options really open up. 
+For example, you can host your entire front-end on a CDN. This will make scaling much easier and cheaper because you will no longer need to worry about your servers handling requests for 
 static resources or rendering HTML.     
  
-### Working with Frontend Developers
+### Working with Front-end Developers
 
-In a traditional monolithic application, even frontend developers who never work on backend code will need to set up a local database, install server dependencies and run the server locally. 
-But what if they're not familiar with, say, how to configure Tomcat? Or what if the developer you hired is just a freelancer and you don't want him or her to have access to your backend code? 
+In a traditional monolithic application, even front-end developers who never work on back-end code will need to set up a local database, install server dependencies and run the server locally. 
+But what if they're not familiar with, say, how to configure Tomcat? Or what if the developer you hired is just a freelancer and you don't want him or her to have access to your back-end code? 
 Maybe this is a pain point or maybe it isn't, but regardless, it's still wasted time for them to have to set up and maintain the entire application locally.
  
-If you split your frontend into its own repository, you can configure it to point to a remote staging API server, rather than a local server and use a tool like 
+If you split your front-end into its own repository, you can configure it to point to a remote staging API server, rather than a local server and use a tool like 
 [local-web-server](https://www.npmjs.com/package/local-web-server) to serve up the static files, just as a CDN would.  
 
 ### Conclusion
 
-The benefits of splitting up your frontend and backend into their own repositories clearly outweigh the cons. This is especially true for large, high-traffic applications with many
+The benefits of splitting up your front-end and back-end into their own repositories clearly outweigh the cons. This is especially true for large, high-traffic applications with many
 contributing developers. And while this strategy may be met with some skepticism from you peers, it is quickly becoming the standard way to develop modern JavaScript-driven web applications. 
